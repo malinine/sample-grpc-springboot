@@ -4,6 +4,7 @@ For learning the basics of building Microservice using the Spring Boot framework
 **prerequisite** <br/>
 + Java 17 <br/>
 + Spring Boot 2.7.13 <br/>
++ Postman <br/>
 
 **How to run project** <br/>
 + Intellij <br/>
@@ -32,4 +33,17 @@ mvn spring-boot:run
 ```
 ![Screenshot 2566-06-26 at 17 28 48](https://github.com/malinine/sample-grpc-springboot/assets/11505428/f1a67960-7ca6-4ee8-8653-bc4c0c10c794)
 
+**How to test** <br/>
 
+Call API using Postman
++ GET /student/{name}
++ PUT /student <br/>
+```
+Request body
+
+{
+    "name" : "thee",
+    "level" : "advanced"
+}
+```
+  
