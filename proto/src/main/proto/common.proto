@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.mine.grpcacademy.common";
+
+enum Level {
+  BEGINNER = 0;
+  ELEMENTARY = 1;
+  INTERMEDIATE = 2;
+  ADVANCED = 3;
+}

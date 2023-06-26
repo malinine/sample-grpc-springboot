@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+import "common.proto";
+
+option java_multiple_files = true;
+option java_package = "com.mine.grpcacademy.student";
+
+message StudentSearchRequest {
+  string name = 1;
+}
+
+message StudentResponse {
+  int32 id = 1;
+  string name = 2;
+  Level level = 3;
+}
+
+message StudentLevelUpdateRequest {
+  string name = 2;
+  Level level = 3;
+}
+
+service StudentService {
+  rpc getStudentLevel(StudentSearchRequest) returns (StudentResponse);
+  rpc updateStudent(StudentLevelUpdateRequest) returns (StudentResponse);
+}

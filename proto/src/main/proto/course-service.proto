@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "common.proto";
+
+option java_multiple_files = true;
+option java_package = "com.mine.grpcacademy.course";
+
+message CourseDTO {
+  string code = 1;
+  string name = 2;
+}
+
+message CourseSearchRequest {
+  Level level = 1;
+}
+
+message CourseSearchResponse {
+  repeated CourseDTO course = 1;
+}
+
+service CourseService {
+  rpc getCourseByLevel(CourseSearchRequest) returns (CourseSearchResponse);
+}

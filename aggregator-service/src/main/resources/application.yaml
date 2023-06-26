@@ -1,0 +1,8 @@
+grpc:
+  client:
+    student-service:
+      address: static://localhost:8001
+      negotiationType: plaintext
+    course-service:
+      address: static://localhost:8002
+      negotiationType: plaintext
