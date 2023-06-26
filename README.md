@@ -3,7 +3,7 @@ For learning the basics of building Microservice using the Spring Boot framework
 
 **prerequisite** <br/>
 + Java 17 <br/>
-+ 2.7.13 <br/>
++ Spring Boot 2.7.13 <br/>
 
 **How to run project** <br/>
 + Intellij <br/>
